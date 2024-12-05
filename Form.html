@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+
+    <form method="GET" action="thank_you.html">
+
+        <div>
+            <label for="fullName">Nome</label>
+            <input 
+            id="fullName" 
+            name="fullName" 
+            type="text" 
+            placeholder="Escreva o seu nome"
+            required
+            />
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" / required>
+        </div>
+
+
+
+
+        <div>
+           <label for="gender">Gênero</label>
+            <div>
+                <input  id="male" name="gender" type="radio" value="Male" />
+                <label for="male">Masculino</label>
+            </div>
+
+            <div>
+                <input id="female" name="gender" type="radio" value="Other" />
+                <label for="female">Mulher</label>
+            </div>
+
+            <div>
+                <input id="other" name="gender" type="radio" value="Other" />
+                <label for="other">Outro</label>
+            </div>
+        </div> <!--Gênero-->
+
+        <div> <!--Serviço-->
+            <label for="servicos">Quais serviços você quer contratar ?</label>
+
+            <div>
+                <input id="landing_page" name="landing_page" type="checkbox" />
+                <label for="landing_page">Criação de Landing Pages</label>
+            </div>
+
+            <div>
+                <input id="apps" name="apps" type="checkbox" />
+                <label for="apps">Aplicativos</label>
+                
+            </div>
+
+            <div>
+            <input id="formatar" name="formatar" type="checkbox" />
+            <label for="formatar">Formatação de Computadores</label>
+            </div>
+
+        </div>
+        
+        <div>
+            <textarea></textarea>
+        </div>
+
+        <!--Botões de ENVIO e RESET-->
+        <div>
+            <input type="submit" value="Finalizar" action="thank_you.html"/>
+            <input type="reset" value="Limpar"/>
+        </div>
+
+    </form>
+
+</body>
+</html>
